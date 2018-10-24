@@ -1,0 +1,199 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500';
+
+a {
+  color: #e81c4f;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+code,
+pre {
+  background: #f5f7f9;
+  border-bottom: 1px solid #d8dee9;
+  color: #a7adba;
+}
+
+pre {
+  border-left: 2px solid #69c;
+}
+
+header {
+  background-color: #263d36;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/mural.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+header p {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+header a {
+  border: 1px solid #336699;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background:  #336699;
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1.5em;
+  color: #555555;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 2em 1em 4em 1em;
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-name: blink;
+}
+
+@keyframes blink {
+  from {
+    background-color: lightyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  a.button {
+    display: block;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .buttons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+  }
+
+  .buttons .button {
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    margin-right: 1em
+  }
+
+  .buttons .button:last-child {
+    margin-right: 0;
+  }
+}
+
+a.button {
+    border: 1px solid #d8dee9;
+    border-radius: 290486px;
+    color: #b0bfc7;
+    padding: 1em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color, background;
+}
+
+.button strong {
+  color: #e81c4f;
+  transition: color 200ms ease-out;
+}
+
+.button:hover strong {
+  color: white !important;
+}
+
+.button.github strong {
+  color: #333;
+}
+
+.button.github:hover {
+  background: #333;
+}
+
+.button.facebook strong {
+  color: #3b5998;
+}
+
+.button.facebook:hover {
+  background: #3b5998;
+}
+
+.button.twitter strong {
+  color: #55acee;
+}
+
+.button.twitter:hover {
+  background: #55acee;
+}
+
+.button.googleplus strong {
+  color: #db4437;
+}
+
+.button.googleplus:hover {
+  background: #db4437;
+}
+
+.button.linkedin strong {
+  color: #0077b5;
+}
+
+.button.linkedin:hover {
+  background: #0077b5;
+}
+
+/* bootstrap overrides */
+.panel-primary {
+  border-color: #336699;
+}
+
+.panel-primary>.panel-heading, .list-group-item.active {
+  background-color: #336699;
+  border-color: #336699;
+}
+
